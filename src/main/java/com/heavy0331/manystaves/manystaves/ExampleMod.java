@@ -1,4 +1,4 @@
-package com.example;
+package com.heavy0331.manystaves.manystaves;
 
 import net.fabricmc.api.ModInitializer;
 
