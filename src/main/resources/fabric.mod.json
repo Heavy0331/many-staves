@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "manystaves",
 	"version": "${version}",
-	"name": "Example mod",
+	"name": "ManyStaves",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,25 +12,25 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/manystaves/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.heavy0331.manystaves.ManyStaves"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.heavy0331.manystaves.ManyStavesClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"manystaves.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "manystaves.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.14.22",
+		"fabricloader": ">=0.14.23",
 		"minecraft": "~1.20.2",
 		"java": ">=17",
 		"fabric-api": "*"
