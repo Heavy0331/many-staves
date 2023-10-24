@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "manystaves:item/fire_staff"
+    "layer0": "manystaves:item/plant_staff"
   }
 }
