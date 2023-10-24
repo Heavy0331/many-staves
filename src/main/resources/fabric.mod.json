@@ -3,15 +3,15 @@
 	"id": "manystaves",
 	"version": "${version}",
 	"name": "ManyStaves",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A simple mod that adds various fun staves that are themed around elements",
 	"authors": [
-		"Me!"
+		"Heavy0331"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "BSD 2-Clause",
 	"icon": "assets/manystaves/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"com.heavy0331.manystaves.ManyStavesClient"
+		],
+		"fabric-datagen": [
+			"com.heavy0331.manystaves.ManyStavesDataGenerator"
 		]
 	},
 	"mixins": [
