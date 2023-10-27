@@ -1,5 +1,6 @@
 package com.heavy0331.manystaves;
 
+import com.heavy0331.manystaves.block.ModBlocks;
 import com.heavy0331.manystaves.item.ModItems;
 import com.heavy0331.manystaves.item.ModItemsGroup;
 import net.fabricmc.api.ModInitializer;
@@ -16,5 +17,6 @@ public class ManyStaves implements ModInitializer {
 		LOGGER.info("ManyStaves is initializing!");
 		ModItemsGroup.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
