@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.heavy0331.manystaves.ManyStaves"
+			"net.heavy0331.manystaves.ManyStaves"
 		],
 		"client": [
-			"com.heavy0331.manystaves.ManyStavesClient"
+			"net.heavy0331.manystaves.ManyStavesClient"
 		],
 		"fabric-datagen": [
-			"com.heavy0331.manystaves.ManyStavesDataGenerator"
+			"net.heavy0331.manystaves.ManyStavesDataGenerator"
 		]
 	},
 	"mixins": [

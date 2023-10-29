@@ -1,4 +1,4 @@
-package com.heavy0331.manystaves.mixin.client;
+package net.heavy0331.manystaves.mixin.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

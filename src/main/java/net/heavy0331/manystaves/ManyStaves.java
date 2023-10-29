@@ -1,8 +1,8 @@
-package com.heavy0331.manystaves;
+package net.heavy0331.manystaves;
 
-import com.heavy0331.manystaves.block.ModBlocks;
-import com.heavy0331.manystaves.item.ModItems;
-import com.heavy0331.manystaves.item.ModItemsGroup;
+import net.heavy0331.manystaves.block.ModBlocks;
+import net.heavy0331.manystaves.item.ModItems;
+import net.heavy0331.manystaves.item.ModItemsGroup;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

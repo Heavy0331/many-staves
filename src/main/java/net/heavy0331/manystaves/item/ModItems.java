@@ -1,6 +1,6 @@
-package com.heavy0331.manystaves.item;
+package net.heavy0331.manystaves.item;
 
-import com.heavy0331.manystaves.ManyStaves;
+import net.heavy0331.manystaves.ManyStaves;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
