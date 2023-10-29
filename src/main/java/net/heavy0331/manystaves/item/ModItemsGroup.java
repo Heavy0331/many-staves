@@ -2,6 +2,7 @@ package net.heavy0331.manystaves.item;
 
 import net.heavy0331.manystaves.ManyStaves;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.heavy0331.manystaves.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -17,6 +18,8 @@ public class ModItemsGroup {
                         entries.add(ModItems.FIRE_STAFF);
                         entries.add(ModItems.WATER_STAFF);
                         entries.add(ModItems.PLANT_STAFF);
+
+                        entries.add(ModBlocks.FIRE_BLOCK);
 
                     }).build());
 
