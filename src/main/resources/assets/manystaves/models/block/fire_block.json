@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "manystaves:block/fire_block.json"
+    "all": "manystaves:block/fire_block"
   }
 }
