@@ -9,15 +9,21 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.NotNull;
 
-public class ModItems {
+public class MSItems {
     public static final Item FIRE_STAFF = registerItem("fire_staff", new Item(new FabricItemSettings()));
     public static final Item WATER_STAFF = registerItem("water_staff", new Item(new FabricItemSettings()));
     public static final Item PLANT_STAFF = registerItem("plant_staff",new Item(new FabricItemSettings()));
-    private static void addItemsToCreativeTabGroup(FabricItemGroupEntries entries) {
+    public static final Item FIRE_GEM = registerItem("fire_gem", new Item(new FabricItemSettings().fireproof()));
+
+
+    // @NotNull only serves here for documentation and could potentially break at a later point
+    private static void addItemsToCreativeTabGroup(@NotNull FabricItemGroupEntries entries) {
         entries.add(FIRE_STAFF);
         entries.add(WATER_STAFF);
         entries.add(PLANT_STAFF);
+        entries.add(FIRE_GEM);
     }
 
     public static Item registerItem(String name, Item item) {
@@ -26,6 +32,6 @@ public class ModItems {
     public static void registerModItems() {
         ManyStaves.LOGGER.info("Registering items for..." + ManyStaves.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCreativeTabGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(MSItems::addItemsToCreativeTabGroup);
     }
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "manystaves:fire_block"
+    }
+  ],
+  "result": {
+    "item": "manystaves:fire_gem",
+    "count": 9
+  }
+}
