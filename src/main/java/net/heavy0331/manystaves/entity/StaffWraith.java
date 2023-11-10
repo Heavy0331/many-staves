@@ -12,6 +12,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.AnimatableManager;
@@ -36,6 +37,8 @@ public class StaffWraith extends HostileEntity implements GeoEntity {
             .dimensions(EntityDimensions.fixed(1.0f, 1.0f)));
 
     public static final Item STAFF_WRAITH_SPAWN_EGG = registerSpawnEgg("staff_wraith_spawn_egg", STAFF_WRAITH, 0x000000, 0xffffff, new Item.Settings());
+
+    @Nullable
     private static EntityType<StaffWraith> registerEntity(String name, FabricEntityTypeBuilder<StaffWraith> entityTypeBuilder) {
         EntityType<StaffWraith> entityType = Registry.register(Registries.ENTITY_TYPE, new Identifier(ManyStaves.MOD_ID, name), entityTypeBuilder.build());
         FabricDefaultAttributeRegistry.register(entityType, StaffWraith.createMobAttributes());
