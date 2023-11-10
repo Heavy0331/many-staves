@@ -2,7 +2,7 @@ package net.heavy0331.manystaves.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.heavy0331.manystaves.ManyStaves;
-import net.heavy0331.manystaves.block.ModBlocks;
+import net.heavy0331.manystaves.block.MSBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -19,7 +19,7 @@ public class MSItemsGroup {
                         entries.add(MSItems.WATER_STAFF);
                         entries.add(MSItems.PLANT_STAFF);
                         entries.add(MSItems.FIRE_GEM);
-                        entries.add(ModBlocks.FIRE_BLOCK);
+                        entries.add(MSBlocks.FIRE_BLOCK);
 
                     }).build());
 
