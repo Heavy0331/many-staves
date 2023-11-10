@@ -7,15 +7,10 @@ import net.minecraft.entity.*;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.random.Random;
-import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -24,11 +19,6 @@ import software.bernie.geckolib.core.animation.AnimatableManager;
 public class StaffWraith extends HostileEntity implements GeoEntity {
     protected StaffWraith(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
-    }
-
-    public static boolean canSpawnInDark(EntityType<? extends HostileEntity> type, ServerWorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random) {
-        boolean isDarkEnough = world.getBlockState(pos).getLuminance() < 8;
-        return isDarkEnough;
     }
 
     @Override
