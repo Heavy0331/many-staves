@@ -1,8 +1,14 @@
 package net.heavy0331.manystaves.entity;
 
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SpawnReason;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
+import net.heavy0331.manystaves.ManyStaves;
+import net.minecraft.entity.*;
 import net.minecraft.entity.mob.HostileEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.ServerWorldAccess;
@@ -29,5 +35,20 @@ public class StaffWraith extends HostileEntity implements GeoEntity {
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return null;
+    }
+    private static final EntityType<StaffWraith> STAFF_WRAITH = Registry.register(
+            Registries.ENTITY_TYPE,
+            new Identifier("manystaves", "staff_wraith"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, StaffWraith::new)
+                    .dimensions(EntityDimensions.fixed(0.75f, 0.75f))
+                    .build()
+    );
+    private static final Item STAFF_WRAITH_SPAWN_EGG = Registry.register(Registries.ITEM,
+                    new Identifier("manystaves", "staff_wraith_spawn_egg"),
+                    new SpawnEggItem(STAFF_WRAITH, 0x000000, 0xFFFFFF,
+                    new Item.Settings()));
+
+    public static void logStaffWraith() {
+        ManyStaves.LOGGER.info("Registering Staff Wraith :P");
     }
 }
