@@ -1,3 +1,4 @@
+package net.heavy0331.manystaves.entity;
 /* import net.minecraft.entity.Entity;
 
 // Made with Blockbench 4.8.3
