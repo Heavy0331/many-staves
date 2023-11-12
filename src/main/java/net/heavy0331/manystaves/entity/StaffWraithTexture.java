@@ -1,4 +1,4 @@
-import net.minecraft.entity.Entity;
+/* import net.minecraft.entity.Entity;
 
 // Made with Blockbench 4.8.3
 // Exported for Minecraft version 1.17+ for Yarn
@@ -8,7 +8,7 @@ public class StaffWraith extends EntityModel<Entity> {
 	public StaffWraith(ModelPart root) {
 		this.bb_main = root.getChild("bb_main");
 	}
-	public static TexturedModelData getTexturedModelData() {
+	public static TexturedModelData  getTexturedModelData() {
 		ModelData modelData = new ModelData();
 		ModelPartData modelPartData = modelData.getRoot();
 		ModelPartData bb_main = modelPartData.addChild("bb_main", ModelPartBuilder.create().uv(0, 0).cuboid(-3.0F, -6.0F, 0.0F, 3.0F, 6.0F, 3.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
@@ -22,3 +22,4 @@ public class StaffWraith extends EntityModel<Entity> {
 		bb_main.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
 	}
 }
+*/
