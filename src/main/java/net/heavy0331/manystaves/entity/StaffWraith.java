@@ -38,11 +38,10 @@ public class StaffWraith extends HostileEntity implements GeoEntity {
 
     public static final Item STAFF_WRAITH_SPAWN_EGG = registerSpawnEgg("staff_wraith_spawn_egg", STAFF_WRAITH, 0x000000, 0xffffff, new Item.Settings());
 
-    @Nullable
     private static EntityType<StaffWraith> registerEntity(String name, FabricEntityTypeBuilder<StaffWraith> entityTypeBuilder) {
         EntityType<StaffWraith> entityType = Registry.register(Registries.ENTITY_TYPE, new Identifier(ManyStaves.MOD_ID, name), entityTypeBuilder.build());
         FabricDefaultAttributeRegistry.register(entityType, StaffWraith.createMobAttributes());
-        return entityType;
+        return null; // using null because entityType will always be null until I add more advanced behavior
     }
     private static Item registerSpawnEgg(String name, EntityType<? extends MobEntity> entityType, int primaryColor, int secondaryColor, Item.Settings settings) {
         return Registry.register(Registries.ITEM, new Identifier(ManyStaves.MOD_ID, name), new SpawnEggItem(entityType, primaryColor, secondaryColor, settings));
