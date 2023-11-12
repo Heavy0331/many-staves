@@ -1,0 +1,21 @@
+{
+   "type": "minecraf:block",
+   "pools": [
+     {
+       "bonus_rolls": 0,
+       "conditions": [
+         {
+           "condition": "minecraft:survives_explosion"
+         }
+       ],
+       "entries": [
+         {
+           "type": "minecarft:item",
+           "name": "manystaves:fire_block"
+         }
+       ],
+       "rolls": 1,
+         "type": "minecraft:loot_table"
+     }
+   ]
+}
