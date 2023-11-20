@@ -4,8 +4,9 @@
   "item.manystaves.plant_staff": "Plant Staff",
   "item.manystaves.fire_gem": "Fire Gem",
   "block.manystaves.fire_block": "Fire Block",
+  "item.manystaves.staff_wraith_spawn_egg": "Staff Wraith Spawn Egg",
 
   "itemgroup.manystaves": "Many Staves",
-  "entity.manystaves.staff_wraith": "Staff Wraith",
+  "entity.manystaves.staff_wraith": "Staff Wraith"
 
 }
