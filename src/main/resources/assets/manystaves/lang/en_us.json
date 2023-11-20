@@ -5,5 +5,7 @@
   "item.manystaves.fire_gem": "Fire Gem",
   "block.manystaves.fire_block": "Fire Block",
 
-  "itemgroup.manystaves": "Many Staves"
+  "itemgroup.manystaves": "Many Staves",
+  "entity.manystaves.staff_wraith": "Staff Wraith",
+
 }

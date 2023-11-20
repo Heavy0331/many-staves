@@ -17,19 +17,9 @@ import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.AnimatableManager;
 
-public class StaffWraith extends HostileEntity implements GeoEntity {
+public class StaffWraith extends HostileEntity {
     protected StaffWraith(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
-    }
-
-    @Override
-    public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
-
-    }
-
-    @Override
-    public AnimatableInstanceCache getAnimatableInstanceCache() {
-        return null;
     }
 
     public static final EntityType<StaffWraith> STAFF_WRAITH = registerEntity("staff_wraith", FabricEntityTypeBuilder
@@ -41,7 +31,7 @@ public class StaffWraith extends HostileEntity implements GeoEntity {
     private static EntityType<StaffWraith> registerEntity(String name, FabricEntityTypeBuilder<StaffWraith> entityTypeBuilder) {
         EntityType<StaffWraith> entityType = Registry.register(Registries.ENTITY_TYPE, new Identifier(ManyStaves.MOD_ID, name), entityTypeBuilder.build());
         FabricDefaultAttributeRegistry.register(entityType, StaffWraith.createMobAttributes());
-        return null; // using null because entityType will always be null until I add more advanced behavior
+        return entityType;
     }
     private static Item registerSpawnEgg(String name, EntityType<? extends MobEntity> entityType, int primaryColor, int secondaryColor, Item.Settings settings) {
         return Registry.register(Registries.ITEM, new Identifier(ManyStaves.MOD_ID, name), new SpawnEggItem(entityType, primaryColor, secondaryColor, settings));
