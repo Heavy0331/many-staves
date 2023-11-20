@@ -19,7 +19,7 @@
 			"net.heavy0331.manystaves.ManyStaves"
 		],
 		"client": [
-          "net.heavy0331.manystaves.ManyStavesClient"
+          "net.heavy0331.manystaves.MSClient"
 		],
 		"fabric-datagen": [
 			"net.heavy0331.manystaves.ManyStavesDataGenerator"
