@@ -19,7 +19,7 @@ public class StaffWraithModel<S extends HostileEntity> extends EntityModel<Staff
     public static TexturedModelData getTexturedModelData() {
         ModelData modelData = new ModelData();
         ModelPartData modelPartData = modelData.getRoot();
-        ModelPartData bb_main = modelPartData.addChild("bb_main", ModelPartBuilder.create().uv(16, 20).cuboid(-4.0F, 0.0F, -3.0F, 8.0F, 12.0F, 32.0F, new Dilation(0.5F)), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
+        ModelPartData bb_main = modelPartData.addChild("bb_main", ModelPartBuilder.create().uv(16, 16).cuboid(-2.0F, 0.0F, -2.0F, 8.0F, 8.0F, 8.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 0.0F, 0.0F));
         return TexturedModelData.of(modelData, 128, 128);
     }
     @Override

@@ -20,7 +20,7 @@ public class StaffWraith extends HostileEntity {
     }
     public static final EntityType<StaffWraith> STAFF_WRAITH = registerEntity("staff_wraith", FabricEntityTypeBuilder
             .create(SpawnGroup.MONSTER, StaffWraith::new)
-            .dimensions(EntityDimensions.fixed(1.0f, 1.0f)));
+            .dimensions(EntityDimensions.fixed(0.75f, 2.0f)));
     private static EntityType<StaffWraith> registerEntity(String name, FabricEntityTypeBuilder<StaffWraith> entityTypeBuilder) {
         EntityType<StaffWraith> entityType = Registry.register(Registries.ENTITY_TYPE, new Identifier(ManyStaves.MOD_ID, name), entityTypeBuilder.build());
         FabricDefaultAttributeRegistry.register(entityType, StaffWraith.createMobAttributes());
@@ -29,6 +29,7 @@ public class StaffWraith extends HostileEntity {
     public static Item registerSpawnEgg(String name, EntityType<? extends MobEntity> entityType, int primaryColor, int secondaryColor, Item.Settings settings) {
         return Registry.register(Registries.ITEM, new Identifier(ManyStaves.MOD_ID, name), new SpawnEggItem(entityType, primaryColor, secondaryColor, settings));
     }
+
     public static void logStaffWraith() {
         ManyStaves.LOGGER.info("Registering Staff Wraith :P");
     }
