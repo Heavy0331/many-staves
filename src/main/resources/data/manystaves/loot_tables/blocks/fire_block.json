@@ -1,5 +1,5 @@
 {
-   "type": "minecraf:block",
+   "type": "minecraft:block",
    "pools": [
      {
        "bonus_rolls": 0,
@@ -10,7 +10,7 @@
        ],
        "entries": [
          {
-           "type": "minecarft:item",
+           "type": "minecraft:item",
            "name": "manystaves:fire_block"
          }
        ],

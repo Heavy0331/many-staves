@@ -22,7 +22,7 @@
           "net.heavy0331.manystaves.MSClient"
 		],
 		"fabric-datagen": [
-			"net.heavy0331.manystaves.ManyStavesDataGenerator"
+			"net.heavy0331.manystaves.MSDataGenerator"
 		]
 	},
 	"mixins": [
