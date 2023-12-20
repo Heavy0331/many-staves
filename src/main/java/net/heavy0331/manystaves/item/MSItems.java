@@ -15,7 +15,7 @@ import static net.heavy0331.manystaves.entity.StaffWraith.STAFF_WRAITH;
 import static net.heavy0331.manystaves.entity.StaffWraith.registerSpawnEgg;
 
 public class MSItems {
-    public static final Item FIRE_STAFF = registerItem("fire_staff", new Item(new FabricItemSettings()));
+    public static final Item FIRE_STAFF = registerItem("fire_staff", new FireStaff(new FabricItemSettings()));
     public static final Item WATER_STAFF = registerItem("water_staff", new Item(new FabricItemSettings()));
     public static final Item PLANT_STAFF = registerItem("plant_staff",new Item(new FabricItemSettings()));
     public static final Item FIRE_GEM = registerItem("fire_gem", new Item(new FabricItemSettings().fireproof()));
