@@ -8,8 +8,8 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
-public class FireStaff extends Item {
-    public FireStaff(Settings settings) {
+public class FireStaff extends MSItems {
+    public FireStaff(Item.Settings settings) {
         super(settings);
     }
     @Override

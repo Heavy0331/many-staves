@@ -14,7 +14,11 @@ import org.jetbrains.annotations.NotNull;
 import static net.heavy0331.manystaves.entity.StaffWraith.STAFF_WRAITH;
 import static net.heavy0331.manystaves.entity.StaffWraith.registerSpawnEgg;
 
-public class MSItems {
+public class MSItems extends Item {
+
+    public MSItems(Settings settings) {
+        super(settings);
+    }
     public static final Item FIRE_STAFF = registerItem("fire_staff", new FireStaff(new FabricItemSettings()));
     public static final Item WATER_STAFF = registerItem("water_staff", new Item(new FabricItemSettings()));
     public static final Item PLANT_STAFF = registerItem("plant_staff",new Item(new FabricItemSettings()));
