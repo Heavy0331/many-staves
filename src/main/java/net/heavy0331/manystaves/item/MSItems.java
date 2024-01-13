@@ -15,10 +15,12 @@ public class MSItems extends Item {
     public MSItems(Settings settings) {
         super(settings);
     }
+
     public static final Item FIRE_STAFF = registerItem("fire_staff", new FireStaff(new FabricItemSettings().maxDamage(1500)));
     public static final Item WATER_STAFF = registerItem("water_staff", new Item(new FabricItemSettings()));
     public static final Item PLANT_STAFF = registerItem("plant_staff",new Item(new FabricItemSettings()));
     public static final Item FIRE_GEM = registerItem("fire_gem", new Item(new FabricItemSettings().fireproof()));
+    public static final Item CRASH_ITEM = registerItem("crash_item", new CrashYourGameItem(new FabricItemSettings()));
 
 
 

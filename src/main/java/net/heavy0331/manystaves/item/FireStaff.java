@@ -1,5 +1,6 @@
 package net.heavy0331.manystaves.item;
 
+import net.minecraft.block.Block;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.SmallFireballEntity;
@@ -7,6 +8,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
@@ -35,7 +38,28 @@ public class FireStaff extends MSItems {
                 playerEntity.getY() + direction.y * 2.0D + playerEntity.getEyeHeight(playerEntity.getPose()),
                 playerEntity.getZ() + direction.z * 2.0D
         );
-        smallFireball.setVelocity(direction.multiply(1.0D));
+
+
+        // raycasting :3
+        HitResult hitResult = playerEntity.raycast(100.0D, 1.0F, false);
+        BlockHitResult blockHitResult = (BlockHitResult) hitResult;
+        double distance = blockHitResult.getPos().distanceTo(playerEntity.getPos());
+
+        // set fireball velocity
+        if (distance > 10.0D) {
+            distance = 10.0D;
+        }
+        else {
+            distance = distance;
+        }
+        if (smallFireball.distanceTo(playerEntity) > 10.0D) {
+            distance = 10.0D;
+        }
+        else {
+            distance = distance;
+        }
+        smallFireball.setVelocity(direction.multiply(distance / 5.0D));
+
 
         // set fireball owner to the current player
         smallFireball.setOwner(playerEntity);

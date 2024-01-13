@@ -18,6 +18,6 @@ public class ManyStaves implements ModInitializer {
 		MSItemsGroup.registerItemGroups();
 		MSItems.registerModItems();
 		MSBlocks.registerModBlocks();
-		StaffWraith.logStaffWraith();
+		StaffWraith.registerStaffWraith();
 	}
 }
