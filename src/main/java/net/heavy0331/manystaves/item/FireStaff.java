@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 
 public class FireStaff extends MSItems {
     public FireStaff(Settings settings) {
-        super(settings);
+        super(settings.maxDamage(1500));
     }
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {

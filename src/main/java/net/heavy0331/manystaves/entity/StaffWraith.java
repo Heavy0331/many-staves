@@ -53,7 +53,6 @@ public class StaffWraith extends ZombieEntity {
     }
     // giving the Staff Wraith Zombie AI for now
     // TODO: make custom AI
-    // TODO: create magic attacks for staff wraith
     @Override
     protected void initGoals() {
         this.goalSelector.add(8, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
