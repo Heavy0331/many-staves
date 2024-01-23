@@ -10,7 +10,7 @@ The "Many Staves" mod for Minecraft Fabric introduces a variety of magical stave
 ## Features
 
 - **Fire Staff:** Unleash the power of fire with this magical staff.
-- **Plant and Ice Staves:** Although currently non-functioning, these staves hint at exciting future updates.
+- **Plant and Ice Staves:** Non functioning (will be functional by 0.1.0)
 
 ## Installation
 
@@ -18,14 +18,15 @@ The "Many Staves" mod for Minecraft Fabric introduces a variety of magical stave
 2. Download the latest release of "Many Staves" mod from the [releases page](#add_link_here).
 3. Place the downloaded JAR file into the `mods` folder of your Minecraft installation.
 
-## Usage
-
-- In the game, craft the staves using the specified crafting recipes (if available).
-- Equip the staves in your hotbar and right-click to activate their powers (for functioning staves).
-
 ## Planned Updates
 
-- Stay tuned for upcoming updates, as more staves and features will be added to enhance your Minecraft experience.
+- A hostile entity called the Staff Wraith
+- A minimal magic system
+- New Staves
+- Wizard Towers
+- Wizards
+- Wizard Villagers
+- New Witch drops
 
 ## License
 
