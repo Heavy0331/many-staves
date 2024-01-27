@@ -3,7 +3,6 @@ package net.heavy0331.manystaves.model;
 import net.heavy0331.manystaves.entity.StaffWraith;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
-import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 

@@ -1,6 +1,5 @@
 package net.heavy0331.manystaves.item;
 
-import net.minecraft.block.Block;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.SmallFireballEntity;
@@ -45,19 +44,6 @@ public class FireStaff extends MSItems {
         BlockHitResult blockHitResult = (BlockHitResult) hitResult;
         double distance = blockHitResult.getPos().distanceTo(playerEntity.getPos());
 
-        // set fireball velocity
-        if (distance > 10.0D) {
-            distance = 10.0D;
-        }
-        else {
-            distance = distance;
-        }
-        if (smallFireball.distanceTo(playerEntity) > 10.0D) {
-            distance = 10.0D;
-        }
-        else {
-            distance = distance;
-        }
         smallFireball.setVelocity(direction.multiply(distance / 5.0D));
 
 
