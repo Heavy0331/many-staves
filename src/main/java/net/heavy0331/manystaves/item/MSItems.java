@@ -19,9 +19,8 @@ public class MSItems extends Item {
     public static final Item FIRE_STAFF = registerItem("fire_staff", new FireStaff(new Item.Settings()));
     public static final Item WATER_STAFF = registerItem("water_staff", new Item(new FabricItemSettings()));
     public static final Item PLANT_STAFF = registerItem("plant_staff",new Item(new FabricItemSettings()));
-    public static final Item FIRE_GEM = registerItem("fire_gem", new Item(new FabricItemSettings().fireproof()));
+    public static final Item FIRE_GEM = registerItem("fire_gem", new FireGem(new Item.Settings()));
     public static final Item CRASH_ITEM = registerItem("crash_item", new CrashYourGameItem(new FabricItemSettings()));
-
     private static void addItemsToCreativeTabGroup(FabricItemGroupEntries entries) {
         entries.add(FIRE_STAFF);
         entries.add(WATER_STAFF);

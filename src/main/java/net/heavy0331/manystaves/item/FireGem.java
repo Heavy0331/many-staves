@@ -1,7 +1,8 @@
 package net.heavy0331.manystaves.item;
 
-public class FireGem extends MSItems {
+import net.minecraft.item.Item;
+public class FireGem extends Item {
     public FireGem(Settings settings) {
-        super(settings);
+        super(settings.fireproof());
     }
 }

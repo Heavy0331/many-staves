@@ -3,6 +3,7 @@ package net.heavy0331.manystaves.item;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.SmallFireballEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
@@ -12,7 +13,7 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
-public class FireStaff extends MSItems {
+public class FireStaff extends Item {
     public FireStaff(Settings settings) {
         super(settings.maxDamage(1500));
     }
@@ -39,12 +40,13 @@ public class FireStaff extends MSItems {
         );
 
 
-        // raycasting :3
+        // raycasting
         HitResult hitResult = playerEntity.raycast(100.0D, 1.0F, false);
         BlockHitResult blockHitResult = (BlockHitResult) hitResult;
         double distance = blockHitResult.getPos().distanceTo(playerEntity.getPos());
 
-        smallFireball.setVelocity(direction.multiply(distance / 5.0D));
+        // adjust fireball velocity the further away the target is
+        smallFireball.setVelocity(direction.multiply(distance));
 
 
         // set fireball owner to the current player
