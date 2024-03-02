@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 
 public class CrashYourGameItem extends Item {
     public CrashYourGameItem(Settings settings) {
-        super(settings);
+        super(settings.maxDamage(1).fireproof());
 
     }
 

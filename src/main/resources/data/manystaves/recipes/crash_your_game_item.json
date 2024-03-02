@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:dirt",
+            "count": 2
+        }
+    ],
+    "result": {
+        "item": "manystaves:crash_item",
+        "count": 1
+    }
+}
